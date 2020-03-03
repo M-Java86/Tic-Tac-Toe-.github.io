@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#todoList {
+  padding-left: 0;
+  background-color: #f7f7f7;
+  align-items: stretch;
+  width: 50%;
+  min-width: 500px;
+  justify-content: space-around;
+  border-radius: 0.25em;
+}
+
+#todoList li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  flex: 1 2em;
+  list-style: none;
+  padding: 0.25em;
+  margin: 0.5em 1em;
+  border-radius: 0.25em;
+  background-color: #cceeff;
+}
+
+#newItem {
+  flex: 1 1em;
+}
+
+

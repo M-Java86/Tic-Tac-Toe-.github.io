@@ -1,0 +1,42 @@
+{ "template": "./template.json",
+  "startDate": "2019-07-22T09:00:00.0Z",
+  "endDate":   "2019-10-16T17:00:00.0Z",
+  "overlays": [ 
+    { "_comment": "Change the duration of an event with name 'foo-lesson' to be 4 hours and 30 minutes",
+      "type": "duration", "name": "foo-lesson", "duration": "4:30"
+    },
+    { "_comment": "replace the name 'foo-lesson' with 'bar-lesson'",
+      "type": "replace", "name": "foo-lesson", "with": "bar-lesson" 
+    },
+    {"_comment": "swap lessons 'foo-lesson' and 'bar-lesson'",
+      "type": "swap", "names": ["foo-lesson", "bar-lesson"] 
+    },
+    {"_comment": "add a new lesson named 'foo-lesson' with duration of 12 hours and 34 minutes after 'bar-lesson' ",
+      "type": "add", "lesson": { "name": "foo-lesson", "duration": "12:34" }, "after": "bar-lesson" 
+    },
+    {"_comment": "remove the lesson named 'foo-lesson'",
+      "type": "remove", "name": "foo-lesson" 
+    },
+    {"_comment": "move a lesson named 'foo-lesson' to occur after 'bar-lesson'",
+      "type": "move", "name": "foo-lesson", "after": "bar-lesson" 
+    },
+    {"_comment": "move a lesson named 'foo-lesson' to occur before 'bar-lesson'",
+      "type": "move", "name": "foo-lesson", "before": "bar-lesson" 
+    }
+  ],
+  "plannedEvents": [
+    { "_comment": "make an event that occurs every 7 days. The start time of the event is the first wednesday at 14:00 of the week and endures for 1 hour and 30 minutes. This event should not occur on 2019-09-10 at 14:00",
+      "name": "foo-event",  "period": "weekly", "duration": "01:30", "start": "wednesday:14:00",
+      "skipTimes": [
+        "2019-09-10T14:00"
+      ]
+    },
+    { "_comment": "make an event occur every 24 hours. The start time of the event is at 12:30 of the day and endures for 12 hours and 30 minutes",
+      "name": "bar-event",  "period": "daily",  "duration": "01:30", "start": "12:30",
+      "skipTimes": []
+    },
+    { "_comment": "make an event that occurs once starting on 2019-09-10 at 10:00 and endures for 1 hour and 30 minutes",
+      "name": "baz-event", "period": "once", "duration": "01:30", "start": "2019-09-10T10:00:00.0Z"
+    }
+  ]
+}

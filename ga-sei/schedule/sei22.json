@@ -1,0 +1,37 @@
+{ "template": "./template.json",
+  "overlays": 
+    [ { "type": "duration", "duration": "03:30", "name": "orientation-intro"},
+      { "type": "duration", "duration": "01:00", "name": "cli-intro-lesson"},
+      { "type": "duration", "duration": "03:00", "name": "git-intro-lesson"},
+      { "type": "duration", "duration": "01:00", "name": "git-intro-exercise"},
+      { "type": "duration", "duration": "03:00", "name": "html-portfolioSite-exercise"},
+      { "type": "add", "after": "js-controlFlow-exercise",
+        "lesson": { 
+          "name": "homework-review",
+          "duration": "01:00"
+        }
+      },
+      { "type": "add", "after": "js-functionDrills-exercise",
+        "lesson": { 
+          "name": "homework-review",
+          "duration": "01:00"
+        }
+      },
+      { "type": "duration", "duration": "24:30", "name": "project-1"},
+      { "type": "duration", "duration": "31:00", "name": "project-2"}
+    ],
+  "startDate": "2019-05-28T09:00:00.0Z",
+  "endDate": "2019-08-21T17:00:00.0Z",
+  "plannedEvents": [
+    { "period": "weekly", "name": "outcomes",  "duration": "01:30", "start": "wednesday:14:00" },
+    { "period": "weekly", "name": "study-day", "duration": "07:00", "start": "wednesday:10:00", 
+      "skipTimes": [
+        "2019-05-29T10:00:00.0Z", 
+        "2019-06-12T10:00:00.0Z",
+        "2019-07-03T10:00:00.0Z" 
+      ]
+    },
+    { "period": "daily",  "name": "lunch",     "duration": "01:30", "start": "12:30" },
+    { "period": "once",   "name": "holiday",   "duration": "48:00", "start": "2019-07-04" }
+  ]
+}

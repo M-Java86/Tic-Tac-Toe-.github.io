@@ -1,0 +1,93 @@
+#!/usr/bin/env bash
+
+rurl="https://git.generalassemb.ly/atl-wdi/sei-curriculum.git" 
+ROOTDIR="course-material"
+
+function usage() {
+  bold=`tput bold`
+  unbold=`tput sgr0`
+
+  cat <<-HERE
+Usage: 
+  ./lessonClone -h
+  ./lessonClone [-b BRANCH] [-s] DIR
+
+downloads the directory DIR in course-material/ from the BRANCH (defaults to
+master) in the sei-curriculum repository.
+  
+Note: this does not create a new local repository. It only downloads the
+content of that directory. You will still need to create a new repository
+to add version control to your changes.
+
+Options
+  ${bold}-h${unbold} 
+    display this help message
+  ${bold}-b BRANCH${unbold} 
+    sets the branch to download to BRANCH. Defaults to master
+  ${bold}-s${unbold} 
+    use ssh instead of https
+  
+Examples
+  ${bold}./lessonClone git-intro-exercise${unbold}
+    downloads the git-intro-exercise directory from the master branch
+  ${bold}./lessonClone react-intro-exercise solution${unbold}
+    downloads the solution code for the react-intro-exercise directory
+
+Dependencies
+  git
+
+Author
+  Noah Harvey (noah.harvey247 gm)
+HERE
+
+  exit 0
+}
+
+branch="master"
+
+while getopts 'hsb:' arg; do
+  case $arg in
+    h)
+      usage
+      ;;
+    s)
+      rurl="git@git.generalassemb.ly:atl-wdi/sei-curriculum.git"
+      ;;
+    b)
+      branch="$OPTARG"
+      ;;
+  esac
+done
+
+localdir="${!OPTIND}"
+
+if [[ -z "$localdir" ]];  then
+  usage
+fi
+
+if [[ -d "$localdir" ]]; then
+  echo "$localdir already exists...aborting"
+  exit 3
+fi
+
+cloneDir="$ROOTDIR/$localdir"
+
+mkdir -p "$localdir"
+cd "$localdir"
+
+git init
+git remote add origin "$rurl"
+
+git config core.sparseCheckout true
+
+echo $cloneDir > .git/info/sparse-checkout
+
+function checkPull() {
+  echo "pull failed. Double check the spelling of DIR. see ./lessonClone -h"
+  exit 2
+}
+
+(git pull origin $branch || checkPull)\
+  && rm -rf .git\
+  && mv $cloneDir/* .\
+  && rm -r $ROOTDIR

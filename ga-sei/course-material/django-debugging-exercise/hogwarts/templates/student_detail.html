@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="student">
+      <h2><a href="/students/{{student.id}}">{{student.name}}</a></h2>
+      <img src="{{student.image_url}}" alt="Picture of {{student.name}}"/>
+  </div>
+  <p>
+    <a href="/students/{{student.id}}/edit"> Edit {{student.name}} </a>
+  </p>
+  <form action="/students/{{student.id}}/delete" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Delete {{student.name}}">
+  </form>
+{% endblock %}

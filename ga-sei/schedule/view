@@ -1,0 +1,186 @@
+#!/usr/bin/env bash
+
+isDarwin=$(uname | grep -i "darwin")
+
+function showUsage() {
+  cat<<HERE
+Usage: ./view [-h] [-r REGEXES] [-l LINE [-v [-n]]] [-s START] [-e NDAYS] COHORT
+
+schedule and lesson viewer for COHORT
+
+  Dependencies:
+    pandoc
+
+  COHORT
+    The cohort number XX in the file path schedule/bin/seiXX.md
+  
+  Options
+    -h
+      Show this help text
+    -d DIR
+      Search DIR for seiXX.json files. This defaults to schedule/bin/.
+    -r
+      Show the schedule for the given REGEXES. REGEXES is a space separated
+      string of regexes to search through the schedule/bin/seiXX.md file. If
+      this option is set -s and -e are ignored
+    -l
+      Show the lesson name on the given line number. Only used with -v or -n
+    -v
+      View the lesson readme.md at the given line number as a manpage. This
+      option requires -l.
+    -n
+      View the lesson notes.md at the given line number as a manpage. THis
+      option requires -l.
+    -s START
+      Show the schedule starting on the given date. If this option is not
+      provided it defaults to the current date. If the -e option is not used then
+      only the schedule for the given day is displayed. START should use any valid
+      input for the "date -d" command (on linux) and ("date -jf %m/%d/%Y" for freebsd
+      systems).
+    -e NDAYS
+      Show the schedule forward NDAYS where NDAYS is an integer. Use this with
+      -s to view the schedule within a range of dates. If this option is not
+      provided it will default to '1' which means that only 1 day will be
+      displayed.
+    -f DIR
+      Use the given DIR located as an immediate child of course-material
+      directory for viewing. This option requires -v or -n.
+
+  Examples
+
+    ./view 23
+      Show the schedule for SEI23 for today.
+    ./view -s 7/30 23
+      Show the schedule for 7/30
+    ./view -r 'project- outcomes' 23
+      Show the lessons that contains 'project-' or 'outcomes'
+    ./view -l 1 -v 23
+      View the lesson material for the first lesson of today
+    ./view -s 8/14 -e 6 23
+      Show the schedule starting on 8/14 for the next 6 days
+HERE
+}
+
+regexes=
+line=
+fileName="readme.md"
+view=false
+if [[ -n $isDarwin ]]; then
+  startDate=$(date -j +%m/%d/%Y)
+else
+  startDate=$(date +%-m/%-d/%Y)
+fi
+ndays="1"
+materialdir=
+searchdir="./schedule/bin"
+
+while getopts 'hr:l:nvs:e:f:d:' opt; do
+  case $opt in
+    h)
+      showUsage
+      exit 0
+      ;;
+    n)
+      view=true
+      fileName="notes.md"
+      ;;
+    v)
+      view=true
+      ;;
+    r)
+      regexes=$OPTARG
+      ;;
+    l)
+      line=$OPTARG
+      ;;
+    s)
+      startDate=$OPTARG
+      ;;
+    e)
+      ndays=$OPTARG
+      ;;
+    f)
+      materialdir=$OPTARG
+      ;;
+    d)
+      searchdir=$OPTARG
+      ;;
+  esac
+done
+
+cohort="${!OPTIND}"
+
+if [[ -z "$cohort" ]]; then
+  echo "COHORT required. see ./view -h"
+  exit 1
+fi
+
+
+function printSchedule() {
+  if [[ -z "$regexes" ]]; then
+    set -e
+    regexes="$(makeDateRangeRegex)"
+    set +e
+  fi
+
+  regexes=$(echo "$regexes" | awk '{ gsub(/^ *| *$/, ""); print; }')
+  regexes=${regexes// /\\|}
+
+  if [[ ! -d "$searchdir" ]]; then
+    echo "$searchdir doesn't exist or isn't a directory" 
+    echo "try using the -d flag (see ./view -h)"
+    exit 3
+  fi
+
+  grep "$regexes" "$searchdir"/sei"$cohort".md\
+    | awk -F '|' '{ printf("%-30s %-30s %30s\n", $1, $2, $3) }'
+}
+
+function getName() {
+  awk "{ if(NR == "$line") print }" | cut -f 1 -d ' '
+}
+
+function formatDate() {
+  if [[ -n $isDarwin ]]; then
+    dt=$(date -v "$2" -jf "%m/%d/%Y" "$1" +%-m/%-d/%Y)
+    if [[ ! $? ]]; then
+      echo "invalid date format for freebsd: $1" >&2
+      echo "use mm/dd/yyyy instead" >&2
+      echo "see ./view -h for documentation for the -s flag" >&2
+      exit 4
+    else
+      echo $dt
+    fi
+  else
+    echo $(date -d "$1" +%-m/%-d/%Y)
+  fi
+}
+
+function makeDateRangeRegex() {
+  regex=""
+  for (( i=0; i < $ndays; i++ )); do
+    if [[ $isDarwin ]]; then
+      set -e
+      regex="$regex $(formatDate "$startDate" "+${i}d")"
+      set +e
+    else
+      regex="$regex $(formatDate "$startDate $i days")"
+    fi
+  done
+
+  echo "$regex"
+}
+
+if $view; then
+
+    if [[ -n $line ]]; then
+      materialdir=$(printSchedule | getName)
+    elif [[ -z $materialdir ]]; then
+      echo "-l or -f required. see ./view -h"
+      exit 2
+    fi
+
+    pandoc -s ./course-material/$materialdir/$fileName -t man | man -l -  
+else
+  printSchedule
+fi

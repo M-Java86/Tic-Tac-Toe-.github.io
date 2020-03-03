@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:400,900');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 15px;
+  color:white;
+  background-color: #323348;
+}
+
+header h1 {
+  text-align: left;
+  padding-left: 30px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding-top: .25rem;
+  font-family: Lora, sans-serif;
+}
+
+header nav {
+  text-align: right;
+}
+
+header a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 15px;
+  color:white;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+main {
+  padding: 0 0px;
+}
+
+section {
+  text-align: center;
+  margin: 0px auto 30px;
+}
+
+section h2 {
+  color: white;
+}
+
+section h2, section h3 {
+  margin: 30px;
+}
+
+section h3  {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.nav-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.nav-wrapper > * {
+  width: 50%;
+}
+
+.banner {
+  background-image: linear-gradient(#00000029, #0000003b), url(../images/daycare.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  color: white;
+}
+
+
+.banner h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 80px;
+  text-shadow: 1px 1px 1px black;
+}
+.split {
+  background-color: #f0d27b;
+  color: white;
+  padding: 30px 60px;
+}
+
+.split>* {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.split p {
+  text-align: justify;
+  font-family: Lora, sans-serif;
+}
+
+.split img {
+  max-width: 450px;
+}
+
+.grid {
+  max-width: 1000px;
+  margin: 0px auto 60px;
+}
+
+.grid > * {
+  width: 30%;
+  display: inline-block;
+}
+.grid img {
+  max-width: 100%;
+  width: 100%;
+}
+
+#adoption h2 {
+  color: #2790b5;
+}
+
+footer {
+  background-color: #323348;
+  padding: 30px;
+  color: white;
+}
+
+

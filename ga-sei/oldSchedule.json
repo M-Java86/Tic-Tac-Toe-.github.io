@@ -1,0 +1,828 @@
+[
+
+  {
+    "sequence": "1.1.2",
+    "name": "orientation-intro",
+    "url": "https://git.generalassemb.ly/atl-wdi/intro-to-wdi-culture",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.1.3",
+    "name": "orientation-installfest",
+    "url": "https://git.generalassemb.ly/atl-wdi/intro-to-wdi-installfest",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.1.4",
+    "name": "orientation-exercise",
+    "url": "http://lightbot.com/hour-of-code.html",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.2.1",
+    "name": "cli-guiComparison-practice",
+    "url": "https://tableplus.io/blog/2018/08/cli-vs-gui-which-one-is-better.html",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.2.2",
+    "name": "cli-intro-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/cli-intro",
+    "depends": [
+      
+    ] 
+  },
+  {
+    "sequence": "1.2.3",
+    "name": "git-intro-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/git-intro",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.2.4",
+    "name": "git-intro-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/git-intro-exercise",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.3.1",
+    "name": "logical-thinking-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/How-to-tie-a-shoe",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.3.2",
+    "name": "html-review-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/html-and-css",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.3.3",
+    "name": "html-staticsite-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/Build-A-Static-Site",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.4.1",
+    "name": "css-mediaQueries-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/css-responsive-design",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.4.2",
+    "name": "css-flexboxGrid-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/css-layout",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.4.3",
+    "name": "html-portfolioSite-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/portfolio-pages",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.5.2",
+    "name": "js-dataTypes-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/js-data-types",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.5.3",
+    "name": "js-controlFlow-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/js-control-flow",
+    "depends": [ "js-dataTypes-lesson" ]
+  },
+  {
+    "sequence": "1.5.4",
+    "name": "js-controlFlow-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/js-ascii-art-exercise",
+    "depends": [ "js-controlFlow-lesson" ]
+  },
+  {
+    "sequence": "1.6.1",
+    "name": "homework review",
+    "url": "",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.6.2",
+    "name": "js-functions-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/js-functions-and-scope",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.6.3",
+    "name": "js-debugging-lab",
+    "url": "https://git.generalassemb.ly/atl-wdi/js-debugging-errors-exercise",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.6.4",
+    "name": "js-functionDrills-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/function-drills-exercise",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.7.1",
+    "name": "review hw",
+    "url": "",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.7.2",
+    "name": "js-objects-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/js-objects-and-context",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.7.3",
+    "name": "js-objects-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/js-calculator-exercise",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.7.4",
+    "name": "js-datastructure-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/objects-in-spaaaaacccceeeee-exercise",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.8.1",
+    "name": "js-codeChallenges-exercise",
+    "url": "https://edabit.com",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.9.1",
+    "name": "js-domIntro-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/js-domIntro-exercise",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.9.2",
+    "name": "js-dom-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/js-dom",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.9.3",
+    "name": "js-events-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/js-events",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.9.4",
+    "name": "js-dom-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/js-pixart",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.10.2",
+    "name": "jquery-intro-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/intro-to-jquery",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.10.3",
+    "name": "jquery-dom-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/jQuery-todo-exercise",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.11.1",
+    "name": "brainTeaser-indexCard-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/atm-lab",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.11.2",
+    "name": "js-diagnostic-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/atm-lab",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.11.4",
+    "name": "css-libraries-practice",
+    "url": "https://git.generalassemb.ly/starryknight/intro-to-styling-libraries-hw.git",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.12.1",
+    "name": "project-1",
+    "url": "https://git.generalassemb.ly/atl-wdi/unit-01-project",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "1.16.1",
+    "name": "project-1-presentation",
+    "url": "",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "2.17.1",
+    "name": "project-1-retro",
+    "url": "",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "2.17.2",
+    "name": "js-node-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/intro-to-node-and-npm"
+  },
+  {
+    "sequence": "2.17.3",
+    "name": "express-intro-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/intro-to-express",
+    "depends": ["js-node-lesson"]
+  },
+  {
+    "sequence": "2.18.2",
+    "name": "express-routing-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/express-routing",
+    "depends": ["express-intro-lesson"]
+  },
+  {
+    "sequence": "2.18.3",
+    "name": "express-views-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/express-views",
+    "depends": ["express-intro-lesson"]
+  },
+  {
+    "sequence": "2.19.1",
+    "name": "sei-linkedLists-exercise",
+    "url": "https://git.generalassemb.ly/software-engineering-immersive/SEI-Course-Materials/tree/master/6_computer-science-materials/data-structures/linked-lists",
+    "depends": ["sei-introDataStructures-exercise"]
+  },
+  {
+    "sequence": "2.19.2",
+    "name": "js-dataModeling-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/javascript-data-modeling-exercise",
+    "depends": ["sei-introAlgorithms-exercise"] 
+  },
+  {
+    "sequence": "2.19.3",
+    "name": "mongo-intro-lesson",
+    "url": "https://git.generalassemb.ly/nharvey/mongo-intro",
+    "depends": []
+  },
+  {
+    "sequence": "2.20.2",
+    "name": "mongoose-intro-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/express-models",
+    "depends": ["express-intro-lesson", "mongo-intro-lesson"]
+  },
+  {
+    "sequence": "2.20.3",
+    "name": "mongoose-queries-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/mongoose-queries",
+    "depends": ["mongoose-intro-lesson"]
+  },
+  {
+    "sequence": "2.21.1",
+    "name": "mongoose-seeding-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/express-models",
+    "depends": ["mongoose-queries-lesson"]
+  },
+  {
+    "sequence": "2.21.2",
+    "name": "express-codeAlong-lesson",
+    "url": "",
+    "depends": ["express-controllers-lesson", "express-routing-lesson", "mongoose-queries-lesson", "mongoose-seeding-lesson"]
+  },
+  {
+    "sequence": "2.21.4",
+    "name": "express-donut-shop-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/donut-shop-exercise",
+    "depends": ["express-controllers-lesson", "express-routing-lesson", "mongoose-queries-lesson", "mongoose-seeding-lesson"]
+  },
+  {
+    "sequence": "2.22.1",
+    "name": "heroku-intro-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/node-heroku-lesson",
+    "depends": []
+  },
+  {
+    "sequence": "2.22.2",
+    "name": "express-authentication-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/express-passport",
+    "depends": ["express-routing-lesson", "express-controllers-lesson"]
+  },
+  {
+    "sequence": "2.22.3",
+    "name": "express-authentication-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/passport-local-lab",
+    "depends": ["express-authentication-lesson"]
+  },
+  {
+    "sequence": "2.24.1",
+    "name": "project-2",
+    "url": "https://git.generalassemb.ly/atl-wdi/wdi-curriculum/tree/master/projects/unit_02",
+    "depends": []
+  },
+  {
+    "sequence": "2.29.1",
+    "name": "project-2-presentations",
+    "url": "https://git.generalassemb.ly/atl-wdi/wdi-curriculum/tree/master/projects/unit_02",
+    "depends": []
+  },
+  {
+    "sequence": "3.30.2",
+    "name": "Intro To React.js - Noah",
+    "url": "https://git.generalassemb.ly/nharvey/react-intro",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.30.3.1",
+    "name": "react-jsx-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/jsx-lesson",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.30.3.2",
+    "name": "react-props-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/jsx-lesson",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.30.4",
+    "name": "react-jsx-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/React-Pizza-Express",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.31.1",
+    "name": "react-thinking-practice",
+    "url": "https://reactjs.org/docs/thinking-in-react.html",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.31.2",
+    "name": "react-state-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/react-state-lesson",
+    "depends": [
+
+    ]
+  },
+  {
+    "sequence": "3.31.4",
+    "name": "react-state-practice",
+    "url": "https://git.generalassemb.ly/atl-wdi/react-state-lesson/blob/master/hardware-store-shopping-cart.md---Optional---Watch:",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.32.2",
+    "name": "js-oop-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/javascript-oop",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.32.3",
+    "name": "js-oop-practice",
+    "url": "https://git.generalassemb.ly/atl-wdi/javascript-oop",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.32.4",
+    "name": "js-oop-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/tamogatchi-exercise",
+    "depends": [
+      
+    ]
+  },
+
+  {
+    "sequence": "3.33.1",
+    "name": "js-map-practice",
+    "url": "https://git.generalassemb.ly/atl-wdi/function-practice-exercise",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.33.2",
+    "name": "react-router-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/react-router-lesson",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.33.3",
+    "name": "react-router-exercise",
+    "url": "",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.34.1",
+    "name": "react-lifecycle-practice",
+    "url": "https://git.generalassemb.ly/atl-wdi/wdi-curriculum/blob/master/instructor_notes/react/react-component-lifecycle.md",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.34.2",
+    "name": "ajax-intro-lesson",
+    "url": "https://git.generalassemb.ly/jamieking/react-ajax-lesson",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.34.3",
+    "name": "ajax-codealong-lesson",
+    "url": "https://git.generalassemb.ly/jamieking/react-ajax-lesson",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.34.4",
+    "name": "react-ajax-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/react-tvmaze",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.35.1",
+    "name": "js-filter-practice",
+    "url": "https://git.generalassemb.ly/atl-wdi/function-practice-exercise",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.35.2",
+    "name": "react-heroku-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/react-fullstack-lesson",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.35.4",
+    "name": "react-router-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/react-router-lab",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.36.1",
+    "name": "react-review",
+    "url": "React-Review",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.36.2",
+    "name": "react-diagnostic-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/react-bog-app",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.37.1",
+    "name": "agile-intro-practice",
+    "url": "https://git.generalassemb.ly/atl-wdi/sdlc-agile-lesson",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.37.2",
+    "name": "project-3",
+    "url": "https://git.generalassemb.ly/atl-wdi/project-03-react",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "3.43.1",
+    "name": "project-3-presentations",
+    "url": "https://git.generalassemb.ly/atl-wdi/project-03-react",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.44.1",
+    "name": "project-3-retro",
+    "url": "",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.44.2.1",
+    "name": "python-install-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/python-starter",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.44.2.2",
+    "name": "python-intro-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/intro-to-python",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.44.3",
+    "name": "python-intro-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/state-capitals",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.44.4",
+    "name": "python-intro-practice",
+    "url": "https://git.generalassemb.ly/atl-wdi/python-koans",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.45.1",
+    "name": "edabit",
+    "url": "https://edabit.com/",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.45.2",
+    "name": "python-oop-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/python-oop",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.45.4",
+    "name": "python-oop-practice",
+    "url": "https://git.generalassemb.ly/dc-wdi-python-django/codebar",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.46.1",
+    "name": "eddabit",
+    "url": "https://edabit.com/",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.46.2",
+    "name": "sql-intro-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/sql-intro",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.46.3.1",
+    "name": "sql-modeling-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/sql-intro",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.46.3.2",
+    "name": "sql-joins-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/sql-intro",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.46.4",
+    "name": "sql-intro-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/wdi-curriculum/blob/master/homework/sql",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.47.1",
+    "name": "Morning Exercise - SQL Zoo",
+    "url": "https://sqlzoo.net/wiki/SELECT_from_Nobel_Tutorial",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.47.2",
+    "name": "django-intro-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/intro-to-django/blob/master/notes.md",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.47.3",
+    "name": "django-models-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/django-models",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.47.4",
+    "name": "django-intro-practice",
+    "url": "https://tutorial.djangogirls.org/en/django/",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.48.1",
+    "name": "react-review-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/wdi-curriculum/tree/master/morning_exercises/react/react-refresh",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.48.4",
+    "name": "python-debugging-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/hogwarts",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.49.1",
+    "name": "django-intro-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/nostal-dja",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.49.3",
+    "name": "django-auth-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/django-auth",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.49.4",
+    "name": "django-intro-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/nostal-dja",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.50.1",
+    "name": "django-heroku-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/Django-Heroku-Deploy",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.50.2",
+    "name": "django-rest-lesson",
+    "url": "https://git.generalassemb.ly/atl-wdi/django-rest-framework",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.50.4",
+    "name": "react-refresh-exercise",
+    "url": "",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.51.1",
+    "name": "django-react-exercise",
+    "url": "https://git.generalassemb.ly/atl-wdi/django-reddit-clone",
+    "depends": [
+      
+    ]
+  },
+  { "sequence": "4.52.1",
+    "name": "interview-workshop",
+    "url": "https://git.generalassemb.ly/ga-wdi-exercises/interview-workshop",
+    "depends": [
+
+    ]
+  },
+  {
+    "sequence": "4.53.1",
+    "name": "project-4-intro",
+    "url": "https://git.generalassemb.ly/atl-wdi/wdi-curriculum/tree/master/projects/unit_04",
+    "depends": [
+      
+    ]
+  },
+  {
+    "sequence": "4.61.1",
+    "name": "project-4-presentations",
+    "url": "",
+    "depends": [
+      
+    ]
+  }
+]

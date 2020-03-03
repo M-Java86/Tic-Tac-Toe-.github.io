@@ -1,0 +1,56 @@
+{ "template": "./template.json",
+  "startDate": "2019-07-22T09:00:00.0Z",
+  "endDate":   "2019-10-14T17:00:00.0Z",
+  "overlays": [
+    { "type": "duration", "name": "cli-intro-lesson", "duration": "02:00"},
+    { "type": "duration", "name": "git-intro-lesson", "duration": "03:30"},
+    { "type": "duration", "name": "git-intro-exercise", "duration": "01:00"},
+    { "type": "duration", "name": "html-staticsite-exercise", "duration": "01:30" },
+    { "type": "replace", "name": "js-debugging-lab", "with": "js-functions-exercise"},
+    { "type": "duration", "name": "project-1", "duration": "24:30"},
+    { "type": "swap", "names": [ "mvc-intro-lesson", "rest-intro-lesson"]},
+    { "type": "add", "lesson": { "name": "homework-review", "duration": "1:00"}, "after": "react-state-practice"},
+    { "type": "duration", "name": "project-2", "duration": "31:00" },
+    { "type": "duration", "name": "project-4", "duration": "44:00" },
+    { "type": "duration", "name": "project-1-presentations", "duration": "6:30"},
+    { "type": "duration", "name": "sei-bigonotation-exercise", "duration": "1:00"},
+    { "type": "duration", "name": "sei-divide-conquer-sorting-algorithms-lesson", "duration": "1:00"},
+    { "type": "duration", "name": "sei-datastructures-intro-lesson", "duration": "1:00"},
+    { "type": "duration", "name": "sei-stacks-and-queues-lesson", "duration": "0:30"},
+    { "type": "duration", "name": "python-intro-practice", "duration": "1:15"},
+    { "type": "duration", "name": "django-team-exercise", "duration": "4:00"},
+    { "type": "move", "name":"agile-intro-lesson", "before": "express-codeAlong-lesson"},
+    { "type": "duration", "name": "express-codeAlong-lesson", "duration": "05:30" },
+    { "type": "duration", "name": "mehn-diagnostic-exercise", "duration": "05:30" },
+    { "type": "replace", "name": "react-diagnostic-exercise", "with": "uxdi-sei-hackathon"},
+    { "type": "duration", "name": "uxdi-sei-hackathon", "duration": "5:30"},
+    { "type": "remove", "name": "project-3"},
+    { "type": "add", "lesson": { "name": "project-3", "duration": "5:30"}, "after": "uxdi-sei-hackathon"},
+    { "type": "move", "name": "react-heroku-lesson", "after": "project-3"},
+    { "type": "add", "lesson": { "name": "project-3", "duration": "31:00"}, "after": "react-heroku-lesson"}
+  ],
+  "plannedEvents": [
+    { "name": "outcomes",  "period": "weekly", "duration": "01:30", "start": "wednesday:14:00" },
+    { "name": "outcomes-event", "period": "once", "duration": "1:00", "start": "2019-09-16T09:30:00.0Z"},
+    { "name": "lunch",     "period": "daily",  "duration": "01:30", "start": "12:30",
+      "skipTimes": [
+        "2019-09-02T10:00"
+      ]
+    },
+    { "name": "holiday", "period": "once", "duration": "08:00", "start": "2019-09-02T09:00:00.0Z"},
+    { "name": "study-day", "period": "weekly", "duration": "07:00", "start": "wednesday:10:00",
+      "skipTimes": [
+        "2019-07-24T10:00",
+        "2019-08-07T10:00",
+        "2019-08-21T10:00",
+        "2019-08-28T10:00",
+        "2019-09-04T10:00",
+        "2019-09-18T10:00",
+        "2019-09-25T10:00",
+        "2019-10-02T10:00",
+        "2019-10-09T10:00",
+        "2019-10-16T10:00"
+      ]
+    }
+  ]
+}

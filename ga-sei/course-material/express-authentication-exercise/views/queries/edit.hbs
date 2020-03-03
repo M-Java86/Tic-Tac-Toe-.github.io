@@ -1,0 +1,15 @@
+<h2>Edit</h2>
+
+<form action="/queries/{{query.id}}?_method=put" method="post">
+  <label>Title</label>
+  <input type="text" value="{{query.title}}" name="title">
+
+  <label>Body</label>
+  <input type="text" value="{{query.body}}" name="body">
+
+  <input type="submit" value="Edit">
+</form>
+
+<form action="/queries/{{query.id}}?_method=delete" method="post">
+  <input type="submit" value="Delete">
+</form>

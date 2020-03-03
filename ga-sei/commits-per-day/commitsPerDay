@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+git log | grep "Date: " | sed -e 's/^Date: *\(... ... ..\?\).*$/\1/g' | sort | uniq -c

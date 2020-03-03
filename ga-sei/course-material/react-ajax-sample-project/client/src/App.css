@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: tomato
+}
+
+button {
+  padding: 10px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  font-size: 1.2em;
+}
+
+input {
+  padding: 10px;
+  font-size: 1.2em;
+  margin-right: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+.results {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.result {
+  max-width: 225px;
+}

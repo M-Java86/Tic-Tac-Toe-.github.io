@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="house">
+    {% for student in house.students.all %}
+    <h2>{{student.name}}</h2>
+    <img src="{{student.image_url}}" alt="">
+    <form action="/students/{{student.id}}/delete" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="Delete {{student.name}}">
+    </form>
+    <a href="/students/{{student.id}}/edit"> Edit {{student.name}} </a>
+
+    <footer>
+      <a href="/houses/{{house.id}}/edit"> Edit {{house.name}} </a>
+      <form action="/houses/{{house.id}}/delete">
+        {% csrf_token %}
+        <input type="submit" value="Delete {{house.name}}">
+      </form>
+    </footer>
+  </div>
+{% endblock %}

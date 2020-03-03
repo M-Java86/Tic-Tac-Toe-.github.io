@@ -1,0 +1,18 @@
+{ "template": "./template.json",
+  "startDate": "2019-09-16T09:00:00.0Z",
+  "endDate":   "2019-12-11T17:00:00.0Z",
+  "overlays": [
+    { "type": "duration", "name": "project-1", "duration": "28:00"}
+  ],
+  "plannedEvents": [
+    { "name": "outcomes",  "period": "weekly", "duration": "01:30", "start": "wednesday:14:00" },
+    { "name": "lunch",     "period": "daily",  "duration": "01:30", "start": "12:30"},
+    { "name": "holiday", "period": "once", "duration": "08:00", "start": "2019-11-28T09:00:00.0Z"},
+    { "name": "holiday", "period": "once", "duration": "08:00", "start": "2019-11-29T09:00:00.0Z"},
+    { "name": "holiday", "period": "once", "duration": "08:00", "start": "2019-11-11T09:00:00.0Z"},
+    { "name": "study-day", "period": "weekly", "duration": "07:00", "start": "wednesday:10:00",
+      "skipTimes": [
+        "2019-10-09T10:00"
+      ]}
+  ]
+}

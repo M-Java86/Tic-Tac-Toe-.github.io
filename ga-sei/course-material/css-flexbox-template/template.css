@@ -1,0 +1,124 @@
+.container {
+  /* Step 1
+   *
+   * make display of container flex
+   *
+   */
+   display: flex; 
+
+  /* Step 2
+   *
+   * set the main-axis flex direction
+   *
+   * row | column | row-reverse | column-reverse
+   *
+   */
+  flex-direction: row;
+
+  /* Step 3 
+   *
+   * set whether items wrap to next "line" if
+   * they overflow the contiainer along main-axis
+   *
+   * wrap | no-wrap | wrap-reverse
+   *
+   */
+  flex-wrap: wrap;
+
+  /* Step 4 
+   *
+   * set the spacing between items along main-axis
+   *
+   * flex-start | flex-end | center 
+   * | space-between | space-around | space-evenly
+   *
+   */
+  justify-content: space-around;
+
+  /* Step 5
+   *
+   * set the spacing between items along cross-axis
+   *
+   * flex-start | flex-end | center | stretch | baseline
+   *
+   */
+  align-items: center;
+
+  /* Step 6
+   *
+   * set the spacing between lines along main-axis
+   *
+   * flex-start | flex-end | center  | stretch
+   * | space-between | space-around
+   *
+   */
+  align-content: space-around;
+
+  background-color: green;
+  height: 100%;
+  width: 50%;
+}
+.item {
+  /* Step 1
+   *
+   * set the order in which the element appears
+   *
+   * NOTE: 0 is the order in which elements appear in the HTML
+   *
+   * <integer> 
+   *
+   */
+  order: 0;
+
+  /* Step 2
+   *
+   * set the size along the main-axis of the item relatie to other items in the
+   * same container if the items are collectively smaller than the container
+   *
+   * NOTE: 0 does not grow the item along main-axis
+   *
+   * <integer> | auto
+   *
+   */
+  flex-grow: 0;
+
+  /* Step 3
+   *
+   * set the relative shrink size of the item if the items are collectively
+   * larger than the container 
+   *
+   * NOTE: 0 does not shrink the item along main-axis
+   *
+   * <integer> | auto
+   *
+   */
+  flex-shrink: 1;
+
+  /* Step 4
+   *
+   * set the default size of the element before the container's space is
+   * factored in (before grow and shrink are used).
+   *
+   * This is used as an alternative to a hard coded "height" or "width" because
+   * it is independent of the direction of the main-axis
+   *
+   * <integer> | auto
+   *
+   */
+  flex-basis: 100px;
+
+  /* Step 5 (optional)
+   *
+   * override the parent's "align-items" value for this item only
+   *
+   * auto | flex-start | flex-end | center | baseline | stretch
+   *
+   */
+  /*
+  align-self: flex-start;
+  */
+
+  height: 100px;
+  background-color: blue;
+  border: 2px black solid;
+}

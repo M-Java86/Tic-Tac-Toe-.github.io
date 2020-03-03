@@ -1,0 +1,26 @@
+<ul>
+  {{#each accounts }}
+    <li>
+      <a href="/accounts/{{_id}}">
+      {{ name }} - {{ balance }}
+      </a>
+    </li>
+ {{/each}}
+</ui>
+
+<h1>New Account</h1>
+<form action="/accounts" method="POST">
+
+  <label for="name">Name</label>
+  <input type="text" name="name" value="" />
+
+  <label for="name">Balance</label>
+  <input type="number" name="balance" value="" />
+
+  <label for="name">Is Active</label>
+  <input type="checkbox" name="isActive" value="true" />
+
+  <input type="submit" value="New" />
+</form>
+
+

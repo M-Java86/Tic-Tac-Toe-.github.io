@@ -1,0 +1,8 @@
+<h1>{{user.name}}</h1>
+<ul>
+    {{#each user.accounts}}
+        <li class="account">
+            <a href='/users/{{../user._id}}/accounts/{{_id}}'>{{accountType}}</a>
+        </li>
+    {{/each}}
+</ul>

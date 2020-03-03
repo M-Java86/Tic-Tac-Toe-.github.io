@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  <h1> Houses </h1>
+  {% for house in houses %}
+    <div class="house">
+      <h2><a href="/houses/{{house.id}}">{{house.name}}</a></h2>
+      <img src="{{house.image_url}}" alt="Picture of {{house.name}}"/>
+    </div>
+  {% endfor %}
+{% endblock %}

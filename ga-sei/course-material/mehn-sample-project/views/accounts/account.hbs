@@ -1,0 +1,23 @@
+<h1>{{ account.name }} </h1>
+
+<form action="/accounts/{{account._id}}?_method=PUT" method="POST">
+
+  <label for="name">Name</label>
+  <input type="text" name="name" value="{{account.name}}" />
+
+  <label for="name">Balance</label>
+  <input type="number" name="balance" value="{{account.balance}}" />
+
+  <label for="name">Is Active</label>
+  <input type="checkbox" name="isActive" value="true" {{#if account.isActive }}checked{{/if}} />
+
+  <input type="submit" value="Update" />
+</form>
+
+<form action="/accounts/{{account.id}}?_method=DELETE" method="POST">
+  <input type="submit" value="Delete"></submit>
+</form>
+
+<h2>
+<a href="/users/{{ account.userId }}">User Accounts</a>
+</h2>

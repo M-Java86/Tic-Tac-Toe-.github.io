@@ -1,0 +1,1075 @@
+{
+  "nBlocks": 4,
+  "unitEndDays": [
+    16,
+    29,
+    43,
+    60
+  ],
+  "lessons": [
+    {
+      "name": "orientation-intro",
+      "sequence": "1.1.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "orientation-installfest",
+      "sequence": "1.1.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "orientation-exercise",
+      "sequence": "1.1.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "cli-guiComparison-practice",
+      "sequence": "1.2.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "cli-intro-lesson",
+      "sequence": "1.2.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "git-intro-lesson",
+      "sequence": "1.2.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "git-intro-exercise",
+      "sequence": "1.2.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "logical-thinking-exercise",
+      "sequence": "1.3.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "html-review-lesson",
+      "sequence": "1.3.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "html-staticsite-exercise",
+      "sequence": "1.3.3",
+      "duration": 2,
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "css-mediaQueries-lesson",
+      "sequence": "1.4.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "css-flexboxGrid-lesson",
+      "sequence": "1.4.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "html-portfolioSite-exercise",
+      "sequence": "1.4.3",
+      "duration": 2,
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-dataTypes-lesson",
+      "sequence": "1.5.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-controlFlow-lesson",
+      "sequence": "1.5.3",
+      "depends": [
+        "js-dataTypes-lesson"
+      ]
+    },
+    {
+      "name": "js-controlFlow-exercise",
+      "sequence": "1.5.4",
+      "depends": [
+        "js-controlFlow-lesson"
+      ]
+    },
+    {
+      "name": "homework review",
+      "sequence": "1.6.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-functions-lesson",
+      "sequence": "1.6.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-debugging-lab",
+      "sequence": "1.6.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-functionDrills-exercise",
+      "sequence": "1.6.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "review hw",
+      "sequence": "1.7.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-objects-lesson",
+      "sequence": "1.7.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-objects-exercise",
+      "sequence": "1.7.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-datastructure-exercise",
+      "sequence": "1.7.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-codeChallenges-exercise",
+      "sequence": "1.8.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-domIntro-exercise",
+      "sequence": "1.9.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-dom-lesson",
+      "sequence": "1.9.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-events-lesson",
+      "sequence": "1.9.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-dom-exercise",
+      "sequence": "1.9.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "jquery-intro-lesson",
+      "sequence": "1.10.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "jquery-dom-exercise",
+      "sequence": "1.10.3",
+      "duration": 2,
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-diagnostic-exercise",
+      "sequence": "1.11.2",
+      "duration": 3,
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "css-libraries-practice",
+      "sequence": "1.11.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-1",
+      "sequence": "1.12.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-1-presentation",
+      "sequence": "1.16.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "api-intro-lesson",
+      "sequence": "2.17.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "internet-intro-lesson",
+      "sequence": "2.17.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "node-intro-lesson",
+      "sequence": "2.17.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "express-intro-lesson",
+      "sequence": "2.17.3",
+      "depends": [
+        "node-intro-lesson",
+        "internet-intro-lesson"
+      ]
+    },
+    {
+      "name": "express-intro-exercise",
+      "sequence": "2.17.4",
+      "depends": [
+        "express-intro-lesson",
+        "node-intro-lesson"
+      ]
+    },
+    {
+      "name": "rest-intro-lesson",
+      "sequence": "2.19.2",
+      "depends": [
+        "express-intro-lesson"
+      ]
+    },
+    {
+      "name": "js-promises-lesson",
+      "sequence": "2.19.1",
+      "depends": [
+        ""
+      ]
+    },
+    {
+      "name": "mvc-intro-lesson",
+      "sequence": "2.19.2",
+      "depends": [
+        "express-intro-lesson"
+      ]
+    },
+    {
+      "name": "express-views-lesson",
+      "sequence": "2.19.3",
+      "depends": [
+        "express-intro-lesson"
+      ]
+    },
+    {
+      "name": "js-dataModeling-exercise",
+      "sequence": "2.18.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "mongo-intro-lesson",
+      "sequence": "2.20.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "express-views-exercise",
+      "sequence": "2.19.4",
+      "depends": [
+        "express-views-lesson"
+      ]
+    },
+    {
+      "name": "mongoose-intro-lesson",
+      "sequence": "2.20.2",
+      "depends": [
+        "express-intro-lesson",
+        "mongo-intro-lesson"
+      ]
+    },
+    {
+      "name": "mongoose-queries-lesson",
+      "sequence": "2.20.3",
+      "depends": [
+        "mongoose-intro-lesson"
+      ]
+    },
+    {
+      "name": "mongoose-seeding-lesson",
+      "sequence": "2.21.1",
+      "depends": [
+        "mongoose-queries-lesson"
+      ]
+    },
+    {
+      "name": "express-codeAlong-lesson",
+      "sequence": "2.21.2",
+      "depends": [
+        "express-controllers-lesson",
+        "express-routing-lesson",
+        "mongoose-queries-lesson",
+        "mongoose-seeding-lesson"
+      ]
+    },
+    {
+      "name": "express-donut-shop-exercise",
+      "sequence": "2.21.4",
+      "depends": [
+        "express-controllers-lesson",
+        "express-routing-lesson",
+        "mongoose-queries-lesson",
+        "mongoose-seeding-lesson"
+      ]
+    },
+    {
+      "name": "heroku-intro-lesson",
+      "sequence": "2.22.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-linkedLists-exercise",
+      "sequence": "2.22.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-2",
+      "sequence": "2.24.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-2-presentations",
+      "sequence": "2.29.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-higher-order-functions-lesson",
+      "sequence": "3.30.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-oop-lesson",
+      "sequence": "3.30.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": " js-oop-exercise",
+      "sequence": "3.30.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-bigonotation-lesson",
+      "sequence": "3.30.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-recursion-lesson",
+      "sequence": "3.30.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-bigonotation-lesson",
+      "sequence": "3.31.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-recursion-lesson",
+      "sequence": "3.31.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-intro-lesson",
+      "sequence": "3.31.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-props-lesson",
+      "sequence": "3.31.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-jsx-exercise",
+      "sequence": "3.31.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-styling-lesson",
+      "sequence": "3.32.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-state-lesson",
+      "sequence": "3.32.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-state-practice",
+      "sequence": "3.32.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-linkedlists-lesson",
+      "sequence": "3.32.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-state-practice",
+      "sequence": "3.32.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-linkedlists-lesson",
+      "sequence": "3.33.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-intro-to-sorting-lesson",
+      "sequence": "3.33.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-basic-sorts-lesson",
+      "sequence": "3.33.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-intro-to-sorting-lesson",
+      "sequence": "3.34.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-basic-sorts-lesson",
+      "sequence": "3.34.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-router-lesson",
+      "sequence": "3.34.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-router-exercise",
+      "sequence": "3.34.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-router-exercise",
+      "sequence": "3.34.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "js-functionDrills-exercise",
+      "sequence": "3.35.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "ajax-intro-lesson",
+      "sequence": "3.35.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-ajax-exercise",
+      "sequence": "3.35.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": " react-ajax-exercise",
+      "sequence": "3.35.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-heroku-lesson",
+      "sequence": "3.36.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-diagnostic-exercise",
+      "sequence": "3.36.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-diagnostic-exercise",
+      "sequence": "3.36.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "react-diagnostic-exercise",
+      "sequence": "3.36.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "agile-intro-practice",
+      "sequence": "3.37.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.37.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.37.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.37.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-searchalgorithms-lesson",
+      "sequence": "3.38.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.38.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.38.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.38.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-designpatterns-lesson",
+      "sequence": "3.39.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.39.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.39.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.39.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.40.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.40.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.40.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.40.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.41.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.41.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.41.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.41.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.42.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.42.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.42.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3",
+      "sequence": "3.42.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3-presentations",
+      "sequence": "3.43.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3-presentations",
+      "sequence": "3.43.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3-review",
+      "sequence": "3.43.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "project-3-review",
+      "sequence": "3.43.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-stacks-and-queues",
+      "sequence": "4.44.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "python-intro-lesson",
+      "sequence": "4.44.2",
+      "depends": [
+      ]
+    },
+    {
+      "name": "python-intro-practice",
+      "sequence": "4.44.3",
+      "depends": [
+        "python-intro-lesson"
+      ]
+    },
+    {
+      "name": "python-intro-exercise",
+      "sequence": "4.44.4",
+      "depends": [
+        "python-intro-lesson"
+      ]
+    },
+    {
+      "name": "sei-binary-trees-lesson",
+      "sequence": "4.45.1",
+      "depends": [
+      ]
+    },
+    {
+      "name": "sei-binary-trees-lesson",
+      "sequence": "4.45.2",
+      "depends": [
+      ]
+    },
+    {
+      "name": "python-oop-lesson",
+      "sequence": "4.45.3",
+      "depends": [
+        "python-intro-lesson"
+      ]
+    },
+    {
+      "name": "python-oop-exercise",
+      "sequence": "4.45.4",
+      "depends": [
+        "python-oop-lesson" 
+      ]
+    },
+    {
+      "name": "sei-graphs-lesson",
+      "sequence": "4.46.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sql-intro-lesson",
+      "sequence": "4.46.2",
+      "depends": [
+      ]
+    },
+    {
+      "name": "sql-intro-exercise",
+      "sequence": "4.46.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-hashtables-lesson",
+      "sequence": "4.46.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-hashtables-lesson",
+      "sequence": "4.47.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-sets-lesson",
+      "sequence": "4.47.4",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-sets-lesson",
+      "sequence": "4.48.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "django-views-and-templates-lesson",
+      "sequence": "4.48.2",
+      "depends": [
+      ]
+    },
+    {
+      "name": "django-models-lesson",
+      "sequence": "4.48.3",
+      "depends": [
+        "django-views-and-templates-lesson" 
+      ]
+    },
+    {
+      "name": "django-intro-exercise",
+      "sequence": "4.48.4",
+      "depends": [
+        "django-models-lesson"
+      ]
+    },
+    {
+      "name": "sei-distribution-sort-lesson",
+      "sequence": "4.49.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "sei-distribution-sort-lesson",
+      "sequence": "4.49.2",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "django-debugging-exercise",
+      "sequence": "4.49.3",
+      "depends": [
+        "django-views-and-templates-lesson",
+        "django-models-lesson"
+      ]
+    },
+    {
+      "name": "django-fullstack-exercise",
+      "sequence": "4.49.4",
+      "depends": [
+        "django-views-and-templates-lesson",
+        "django-models-lesson"
+      ]
+    },
+    {
+      "name": "django-fullstack-exercise",
+      "sequence": "4.50.1",
+      "depends": [
+        "django-views-and-templates-lesson",
+        "django-models-lesson"
+      ]
+    },
+    {
+      "name": "django-rest-framework-lesson",
+      "sequence": "4.50.2",
+      "depends": [
+        
+        "django-views-and-templates-lesson",
+        "django-models-lesson"
+      ]
+    },
+    {
+      "name": "django-auth-lesson",
+      "sequence": "4.50.3",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "django-fullstack-exercise",
+      "sequence": "4.50.4",
+      "depends": [
+        "django-views-and-templates-lesson",
+        "django-models-lesson"
+      ]
+    },
+    {
+      "name": "git-branching-lesson",
+      "sequence": "4.51.1",
+      "depends": [
+        "git-intro-lesson"
+      ]
+    },
+    {
+      "name": "django-team-exercise",
+      "sequence": "4.51.2",
+      "depends": [
+      ]
+    },
+    {
+      "name": "sei-interview-workshop",
+      "sequence": "4.52.2",
+      "depends": [
+      ],
+      "duration": 2
+    },
+    {
+      "name": "project-4",
+      "sequence": "4.53.1",
+      "depends": [
+        
+      ],
+      "duration": 28
+    },
+    {
+      "name": "sei-divide-conquer-sorting-algorithms-lesson",
+      "sequence": "4.54.4",
+      "depends": [
+        
+      ],
+      "duration": 1
+    },
+    {
+      "name": "sei-divide-conquer-sorting-algorithms-lesson",
+      "sequence": "4.55.1",
+      "depends": [
+        
+      ],
+      "duration": 1
+    },
+    {
+      "name": "project-4-presentations",
+      "sequence": "4.60.1",
+      "depends": [
+        
+      ]
+    },
+    {
+      "name": "outcomes",
+      "sequence": "1.3.3",
+      "duration": 1,
+      "step": 20
+    },
+    {
+      "name": "study-day",
+      "sequence": "1.8.2",
+      "duration": 1,
+      "step": 20
+    }
+  ]
+}
