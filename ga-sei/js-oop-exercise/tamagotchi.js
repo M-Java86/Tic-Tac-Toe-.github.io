@@ -53,5 +53,5 @@ class Tamagotchi {
   };
 } 
 
-var bob = new Tamagotchi('bob', 'blah')
-bob.start();
+var tim = new Tamagotchi('tim', 'blah')
+tim.start();

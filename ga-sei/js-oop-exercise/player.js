@@ -18,8 +18,8 @@ var player = {
   }
 }; //end player
 
-var tom4 = new Tamagotchi('joe', 'dog')
+var michelle = new Tamagotchi('michelle', 'dog')
 
-var player.feedTamagotchi(tom4)
-var player.medicateTamagotchi(tom4)
-var player.knockOutTamagotchi(tom4)
+var player.feedTamagotchi(michelle)
+var player.medicateTamagotchi(michelle)
+var player.knockOutTamagotchi(michelle)
